@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gerador de Senha</title>
+</head>
+<main>
+<body>
+    <header class="hero">
+        <h1 class="title">Gerador de Senha</h1>
+        <p class="subtitle">Utilize o nosso gerador online para criar uma senha forte e segura.</p>
+    </header>
+
+    <section class="box">
+        <div class="password">
+            <div class="text">
+                <input type="text" name="password" 
+                id="password"/>
+            </div>
+            <div class="actions">
+                <button id="copy-1"><i class='bx bx-copy'></i></button>
+                <button id="renew"><i class='bx bx-shuffle'></i></button>
+            </div>    
+        </div>
+        <div class="security-indicator">
+            <div id="security-indicator-bar" class="bar"></div>
+        </div>
+    </section>  
+
+    <section class="box customize">
+        <h3 class="title">Personalizar</h3>
+        <div class="actions">
+            <div class="password-length">
+                <p>Tamanho: <span id="password-length-text">16</span></p>
+                <input type="range" name="password-length" id="password-length" class="slider" value="16" min="4" max="64"/>
+            </div>
+            <div class="config">
+                <label class="checkbox-container">
+                    <span class="text">Maiúsculas</span>
+                    <input type="checkbox" id="uppercase-check" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    <span class="text">Números</span>
+                    <input type="checkbox" id="number-check" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">
+                    <span class="text">Símbolos</span>
+                    <input type="checkbox" id="symbol-check" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    
+   <div class="submit">
+        <button id="copy-2">Copiar Senha</button>
+   </div>
+
+    <button>Gerar nova senha</button>
+    
+</body>
+</main>
+<script src="/script.js"></script>
+</html>
